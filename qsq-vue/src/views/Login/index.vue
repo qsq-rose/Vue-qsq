@@ -261,11 +261,21 @@ export default {
         password: sha1(ruleForm.password),
         code: ruleForm.code
       };
-      Login(requestdata)
-        .then(res => {
-          console.log("登录成功！");
-        })
-        .catch(err => {});
+      root.$store.dispatch("app/login", requestdata).then(res => {
+        console.log("登录成功！");
+        root.$router.push({
+          name: "Console"
+        });
+      });
+
+      // Login(requestdata)
+      //   .then(res => {
+      //     console.log("登录成功！");
+      //     root.$router.push({
+      //       name: "Console"
+      //     });
+      //   })
+      //   .catch(err => {});
     };
 
     /**
