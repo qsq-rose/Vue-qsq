@@ -33,5 +33,26 @@
         background-color: rgba($color: #d35400, $alpha: 0.8) !important;
       }
     }
+    //table样式
+    .el-table{
+      td, th{
+        text-align: center !important;
+      }
+      th{
+        font-weight: bold;
+      }
+      
+        margin-left:  -15px;
+      
+      
+    } 
+    //底部按钮
+    .el-dialog__footer{
+      text-align: center !important;
+      .el-button{
+        width: 150px;
+        margin: 0 15px;
+      }
+    }
   
   

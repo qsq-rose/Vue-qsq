@@ -37,6 +37,7 @@ module.exports = {
     sourceMap: false,
     // css预设器配置项
     loaderOptions: {
+      //引入sass全局入口
       sass: {
         prependData: `@import "./src/styles/main.scss";`
       }

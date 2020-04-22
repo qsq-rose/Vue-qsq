@@ -216,7 +216,7 @@ export default {
         status: true,
         text: "发送中"
       });
-
+      const ss = () => {};
       //在后端验证用户名是否为空
       setTimeout(() => {
         GetSms(requestdata)

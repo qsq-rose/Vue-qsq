@@ -12,6 +12,9 @@ export function removeToken() {
 export function setUsername(value) {
     Cookie.set('username', value)
 }
+export function getUsername() {
+    return Cookie.get('username')
+}
 export function removeUsername() {
     return Cookie.remove('username')
 }

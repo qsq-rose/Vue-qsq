@@ -7,6 +7,8 @@ import VueCompositionApi from "@vue/composition-api";
 import "element-ui/lib/theme-chalk/index.css";
 import "./router/premit"
 import "./icons"
+import global from "@/utils/global.js"
+Vue.use(global)
 Vue.use(ElementUI);
 Vue.use(VueCompositionApi);
 
